@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="29743" started-at="2021-07-16T23:13:50 IST" finished-at="2021-07-16T23:14:20 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="29743" started-at="2021-07-16T23:13:50 IST" finished-at="2021-07-16T23:14:20 IST">
+      <class name="org.testcases.RegistrationTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:org.testcases.RegistrationTest@646007f4]" name="setup" is-config="true" duration-ms="8369" started-at="2021-07-16T23:13:50 IST" finished-at="2021-07-16T23:13:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="registration(java.util.Hashtable)[pri:1, instance:org.testcases.RegistrationTest@646007f4]" name="registration" duration-ms="5606" started-at="2021-07-16T23:14:00 IST" data-provider="dp" finished-at="2021-07-16T23:14:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ConfirmPassword=password, Username=1234871, Phone=01135314748900, Address=cccc, firstname=aaaa, lastname=bbbb, Password=password, runmode=Y, City=Dublin, ZipCode=15, SSN=4128336663, State=cork}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration -->
+        <test-method status="PASS" signature="fundTransfer(java.util.Hashtable)[pri:2, instance:org.testcases.RegistrationTest@646007f4]" name="fundTransfer" duration-ms="7361" started-at="2021-07-16T23:14:06 IST" data-provider="dp" finished-at="2021-07-16T23:14:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Amount=120.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fundTransfer -->
+        <test-method status="PASS" signature="accountActivity(java.util.Hashtable)[pri:3, instance:org.testcases.RegistrationTest@646007f4]" name="accountActivity" duration-ms="6669" started-at="2021-07-16T23:14:13 IST" data-provider="dp" finished-at="2021-07-16T23:14:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ActivityPeriod=July, Type=Debit}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountActivity -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:org.testcases.RegistrationTest@646007f4]" name="teardown" is-config="true" duration-ms="368" started-at="2021-07-16T23:14:20 IST" finished-at="2021-07-16T23:14:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- org.testcases.RegistrationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
