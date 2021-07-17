@@ -1,6 +1,7 @@
 package org.locatorsandcations;
 
 import org.base.GlobalLibrary;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -28,11 +29,14 @@ public class AccountServicesMenuPage extends GlobalLibrary {
 	
 	public void clickOnFundsTransferLink()
 	{
-		click(getFundsTransfer_link());
+		explicitwait(fundsTransfer_link);
+		click(getFundsTransfer_link());	
+		explicitwaitforselect(driver.findElement(By.xpath("//select[@id='fromAccountId']")));
 	}
 	
 	public void clicOnAccountOverviewLink()
 	{
+		explicitwait(accountsOverview_link);
 		click(getAccountsOverview_link());
 	}
 	

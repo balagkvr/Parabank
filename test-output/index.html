@@ -114,7 +114,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testcases.RegistrationTest" hash-for-method="registration({ConfirmPassword=password, Username=1234871, Phone=01135314748900, Address=cccc, firstname=aaaa, las...)">registration({ConfirmPassword=password, Username=1234871, Phone=01135314748900, Address=cccc, firstname=aaaa, las...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testcases.RegistrationTest" hash-for-method="registration({ConfirmPassword=password, Username=1234897, Phone=01135314748900, Address=cccc, firstname=aaaa, las...)">registration({ConfirmPassword=password, Username=1234897, Phone=01135314748900, Address=cccc, firstname=aaaa, las...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -153,10 +153,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="registration({ConfirmPassword=password, Username=1234871, Phone=01135314748900, Address=cccc, firstname=aaaa, las...)">
-                  </a> <!-- registration({ConfirmPassword=password, Username=1234871, Phone=01135314748900, Address=cccc, firstname=aaaa, las...) -->
+                  <a name="registration({ConfirmPassword=password, Username=1234897, Phone=01135314748900, Address=cccc, firstname=aaaa, las...)">
+                  </a> <!-- registration({ConfirmPassword=password, Username=1234897, Phone=01135314748900, Address=cccc, firstname=aaaa, las...) -->
                   <span class="method-name">registration</span>
-                  <span class="parameters">({ConfirmPassword=password, Username=1234871, Phone=01135314748900, Address=cccc, firstname=aaaa, lastname=bbbb, Password=password, runmode=Y, City=Dublin, ZipCode=15, SSN=4128336663, State=cork})</span>
+                  <span class="parameters">({ConfirmPassword=password, Username=1234897, Phone=01135314748900, Address=cccc, firstname=aaaa, lastname=bbbb, Password=password, runmode=Y, City=Dublin, ZipCode=15, SSN=4128336663, State=cork})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,6 +171,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;ExtentListeners.ExtentListeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;org.testcases.RegistrationTest&quot;/&gt;
@@ -215,22 +218,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'fundTransfer')
+data.setCell(0, 1, 'accountActivity')
 data.setCell(0, 2, 'org.testcases.RegistrationTest')
-data.setCell(0, 3, 7361);
+data.setCell(0, 3, 6844);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'accountActivity')
+data.setCell(1, 1, 'registration')
 data.setCell(1, 2, 'org.testcases.RegistrationTest')
-data.setCell(1, 3, 6669);
+data.setCell(1, 3, 6155);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'registration')
+data.setCell(2, 1, 'fundTransfer')
 data.setCell(2, 2, 'org.testcases.RegistrationTest')
-data.setCell(2, 3, 5606);
+data.setCell(2, 3, 4043);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -262,20 +265,20 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">registration({ConfirmPassword=password, Username=1234871, Phone=01135314748900, Address=cccc, firstname=aaaa, las...)</span>
-                <span class="method-start">9669 ms</span>
+                <span class="method-name">registration({ConfirmPassword=password, Username=1234897, Phone=01135314748900, Address=cccc, firstname=aaaa, las...)</span>
+                <span class="method-start">8802 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fundTransfer({Amount=120.0})</span>
-                <span class="method-start">15306 ms</span>
+                <span class="method-start">14995 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">accountActivity({ActivityPeriod=July, Type=Debit})</span>
-                <span class="method-start">22671 ms</span>
+                <span class="method-start">19050 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">29342 ms</span>
+                <span class="method-start">25898 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

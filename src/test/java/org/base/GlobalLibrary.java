@@ -2,15 +2,14 @@ package org.base;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -41,7 +40,21 @@ public class GlobalLibrary {
 	public static void implicitwait()
 	{
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 	}
+	
+	public static void explicitwait(WebElement element)
+	{
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.elementToBeClickable(element));				
+	}
+	
+	public static void explicitwaitforselect(WebElement element)
+	{
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.presenceOfNestedElementLocatedBy(element,By.tagName("option")));				
+	}
+	
 	
 	public static void typeInput(WebElement element, String data)
 	{

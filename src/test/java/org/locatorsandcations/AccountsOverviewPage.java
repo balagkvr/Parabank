@@ -21,6 +21,7 @@ public class AccountsOverviewPage extends GlobalLibrary {
 	
 	public void clickonaccountnumberlink()
 	{
+		explicitwait(accountNo_link);
 		click(getAccountNo_link());
 	}
 	
