@@ -17,8 +17,10 @@ public class GlobalLibrary {
 	
 	public static WebDriver driver;
 	
+	//balaji one branch update
 	public static WebDriver getDriver()
 	{
+		//System.out.println("balaji one branch update");
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		return driver;
